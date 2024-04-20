@@ -66,3 +66,18 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+ .main {
+  display: flex;
+
+ }
+
+ .ticker {
+  text-indent: 5px;
+  padding: 10px 15px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  background-color: #fefefe;
+  color: #000;
+  text-transform: uppercase;
+  border: 1px solid thistle;
+ }
