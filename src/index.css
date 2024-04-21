@@ -38,7 +38,7 @@ h1 {
 button {
   border-radius: 8px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
+  padding: 20px 30px;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
@@ -68,16 +68,39 @@ button:focus-visible {
 }
  .main {
   display: flex;
+  justify-content: space-between;
+  width: 100vh;
 
  }
 
- .ticker {
+
+
+.stockCard{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--white);
+  border-radius: 4.88px;
+  padding: 30px 30px 30px 40px;
+  transition: box-shadow .2s;
+  box-shadow: 0 8px 43px rgba(3,54,61,.09);
+}
+
+.form {
+  display: flex;
+  place-content: center;
+  flex-direction: column;
+}
+.ticker {
   text-indent: 5px;
-  padding: 10px 15px;
-  margin-bottom: 5px;
+  padding: 20px 30px;
+  margin-bottom: 10px;
   border-radius: 5px;
   background-color: #fefefe;
   color: #000;
   text-transform: uppercase;
   border: 1px solid thistle;
+  text-align: center;
+  font-weight: bold;
+  font-family: inherit;
  }

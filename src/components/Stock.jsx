@@ -19,7 +19,7 @@ function Stock(props) {
   }, [props.company]); // Make sure to re-run the effect if `props.symbol` changes
 
   return (
-    <div>
+    <div className='stockCard'>
       <h3>{props.company}</h3>
       {data && (
         <div>
