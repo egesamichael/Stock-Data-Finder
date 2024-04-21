@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react';
 
 function Stock(props) {
   const [data, setData] = useState(null);
-  const apiKey = process.env.API_KEY;
+  const apiKey = import.meta.env.VITE_API_KEY;
+  console.log(apiKey); // Add this line to check if apiKey is correctly set
+
   useEffect(() => {
     const fetchData = async () => {
       try {
