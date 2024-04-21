@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 
 function Stock(props) {
   const [data, setData] = useState(null);
-
+  const apiKey = process.env.API_KEY;
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const url = `https://api.polygon.io/v1/open-close/${props.company}/2023-01-09?adjusted=true&apiKey=iFujpirSbQKne_BBVG4vSfCH1KSesSTf`;
+        const url = `https://api.polygon.io/v1/open-close/${props.company}/2023-01-09?adjusted=true&apiKey=${apiKey}`;
         const response = await fetch(url);
         const jsonData = await response.json();
         setData(jsonData);
